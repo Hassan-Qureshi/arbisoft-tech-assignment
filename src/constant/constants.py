@@ -7,9 +7,16 @@ CSV_HEADERS = ['World Rank', 'Institution Name', 'Location', 'Score', 'Domain']
 OUTPUT_DIR_BASE = 'output'
 SCRAPED_DATA_FILES = 'scrapped-data'
 ANALYTICAL_DATA = 'analytical-data'
-
+GRAPH_IMAGES = 'visual-graph'
+RAW_DATA = 'raw-curated-data'
 # File Names
 UNIVERSITIES_LIST_FILE_NAME = 'ScrappedTop1000Universities.csv'
-GRAPH_IMAGES = 'visual-graph'
+
+UNIVERSITIES_TOTAL_COUNT_WRT_COUNTRY_FILE_NAME = 'UniversitiesCountForEachCountry.csv'
+UNIVERSITIES_TOTAL_COUNT_WRT_COUNTRY_GRAPH_FILE = 'UniversitiesCountForEachCountry.png'
+
+UNIVERSITIES_AVERAGE_RANKING_WRT_COUNTRY_FILE_NAME = 'UniversitiesAvgerageRankingForEachCountry.csv'
+UNIVERSITIES_AVERAGE_RANKING_WRT_COUNTRY_GRAPH_FILE = 'UniversitiesAvgerageRankingForEachCountry.png'
+
 # Web Response Codes
 RESPONSE_OK = 200

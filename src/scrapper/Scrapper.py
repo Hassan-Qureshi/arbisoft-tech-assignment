@@ -81,7 +81,7 @@ class Scrapper:
 
         with open(self.SCRAPPED_FILE_NAME, "a", encoding="utf-8", newline='') as csv_file:
             writer = csv.writer(csv_file)
-            for content in table_contents[:100]:
+            for content in table_contents:
                 data = content.findAll('td')
                 world_ranking = data[0].text.strip()
                 institute_name = data[1].text.strip()
@@ -99,8 +99,13 @@ class Scrapper:
                 writer.writerow([world_ranking, institute_name, location, score, uni_domain])
                 time.sleep(2)
 
+    def run_scrapper(self):
+        print('=======> Scrapper is running <=======')
+        self.merge_save(self.CWUR_URL)
+        print('=======> Data Scrapped successfully <=======')
 
 if __name__ == '__main__':
     scrapper = Scrapper()
-    scrapper.merge_save(scrapper.CWUR_URL)
+    # scrapper.merge_save(scrapper.CWUR_URL)
+    scrapper.run_scrapper()
 
