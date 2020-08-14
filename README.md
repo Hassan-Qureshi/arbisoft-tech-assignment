@@ -13,6 +13,8 @@
 
 - The working directory should be `src`
 
+- The project is fully dynamic the directories, file names, URLs etc are stored in separate file which can be reference from any where inside the project.
+
 <hr>
 
 ### Task Explanation
@@ -20,8 +22,9 @@ The task is divided into two sub-modules
 1. Scraping Module
 2. Data Analytics Module
 #### Scraping Module
-My approach was to scrap the first main page which contains list of all the universities and then traverse the universities list one by one, get `href` of respective university, and get the <u>University Domain</u> which was <b> bonus part.</b><br>
-The Module is located at `src.scrapper.Scrapper.py`
+My approach was to scrap the first main page which contains list of all the universities and then traverse the universities list one by one, get `href` of respective university, and get the <u>University Domain</u> from second page which was <b> bonus part.</b><br>
+The module is located at `src.scrapper.Scrapper.py` <br>
+The scrapped data will be at location `output/scrapped-data/`
 #### Data Analytics Module
 I used two transformations in order to present the data or information in better way. <br>
 <ol>
